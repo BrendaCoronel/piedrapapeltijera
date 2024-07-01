@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Piedra, Papel o Tijera</title>
+    <script>
+        // 1 es piedra, 2 es papel y 3 es tijera
+        let Jugador = 0
+        let Pc = 2
+        Jugador = prompt("Elije 1 para Piedra 2, para Papel o 3 para Tijera")
+        //alert("Elejiste " + Jugador)
+        if(Jugador == 1) {
+            alert("Elejiste 🪨")
+        } else if(Jugador == 2) {
+            alert("Elegiste 📄")
+        }else if(Jugador == 3){
+            alert("Elegiste ✂️")
+        }else {
+            alert("Perdiste ☠️")
+        }
+        if(Pc == 1) {
+            alert("Pc elije 🪨")
+        } else if(Pc == 2) {
+            alert("Pc elije 📄")
+        }else if(Pc == 3){
+            alert("Pc elije ✂️")
+        }else {
+            alert("Perdiste ☠️")
+        }
+        //COMBATE
+        //Verifica que no hay empate
+        if(Pc == Jugador){
+            alert("Empate 🤪")
+        //Segundo escenario "Ganaste"
+        }else if(Jugador == 1 && Pc == 3){
+            alert("Ganaste 🥳")
+            //Tercer escenario "Ganaste"
+        }else if(Jugador == 2 && Pc == 1){
+            alert("Ganaste")
+        //Cuarto escenario "perdiste"
+        }else if(Jugador == 1 && Pc == 2){
+            alert("Game Over 💀")
+        } 
+        //Quinto escenario "Ganaste"
+        else if(Jugador == 3 && Pc == 2){
+            alert("Ganaste")
+        }
+        //Sexto escenario "Perdiste"
+        else if(Jugador == 2 && Pc == 3){
+            alert("Perdiste")
+        }
+    
+        
+    </script>
+</head>
+<body>
+   <h1>Piedra, Papel o Tijera</h1>
+</body>
+</html>
